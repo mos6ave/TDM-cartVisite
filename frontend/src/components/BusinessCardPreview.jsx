@@ -15,7 +15,7 @@ export default function BusinessCardPreview({ employee, onClose }) {
       <div style={{
         width: 324, height: 216, background: '#fff', borderRadius: 10, overflow: 'hidden',
         boxShadow: '0 8px 32px rgba(0,0,0,0.25)', position: 'relative', fontFamily: 'Arial, sans-serif',
-        border: '0.5px solid #ddd',
+        border: '0.5px solid #ddd', direction: isAr ? 'rtl' : 'ltr',
       }}>
         {/* Top tricolor bar */}
         <div style={{ display: 'flex', height: 10, position: 'absolute', top: 0, left: 0, right: 0, zIndex: 2 }}>
@@ -38,8 +38,8 @@ export default function BusinessCardPreview({ employee, onClose }) {
               <span key={l} style={{ background: bg, color: bg === '#F5C518' ? '#111' : '#fff', fontWeight: 900, fontSize: 13, padding: '2px 5px', borderRadius: 2 }}>{l}</span>
             ))}
           </div>
-          <div style={{ fontSize: 7, fontWeight: 700, color: '#111', textAlign: 'center', lineHeight: 1.5, marginTop: 4 }}>
-            {isAr ? <>البث الاذاعي<br />والتلفزي الموريتاني</> : <>TELEDIFFUSION<br />DE MAURITANIE</>}
+          <div style={{ fontSize: 7, fontWeight: 700, color: '#111', textAlign: 'center', lineHeight: 1.5, marginTop: 4, direction: isAr ? 'rtl' : 'ltr' }}>
+            {isAr ? <>البث الإذاعي<br />والتلفزي الموريتاني</> : <>TELEDIFFUSION<br />DE MAURITANIE</>}
           </div>
           <div style={{ fontSize: 7.5, fontWeight: 800, color: '#007A3D' }}>TDM S.A</div>
         </div>

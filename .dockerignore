@@ -1,0 +1,29 @@
+# Git
+.git
+.gitignore
+
+# Python cache
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+# Django local
+backend/db.sqlite3
+backend/staticfiles/
+backend/media/
+
+# Frontend build (sera fait dans le Docker)
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environnements virtuels
+.venv
+venv/
+env/
+
+# Scripts Windows (pas utiles dans le conteneur Linux)
+*.bat

@@ -118,7 +118,7 @@ export default function Employees() {
                 {/* Avatar + Info */}
                 <div style={{ display: 'flex', gap: 12, marginBottom: 14 }}>
                   {emp.photo ? (
-                    <img src={`http://localhost:8000${emp.photo}`}
+                    <img src={emp.photo}
                       style={{ width: 52, height: 52, borderRadius: 12, objectFit: 'cover', flexShrink: 0, border: '2px solid var(--border)' }} alt="" />
                   ) : (
                     <div style={{ width: 52, height: 52, borderRadius: 12, background: 'linear-gradient(135deg, #007A3D, #005A2C)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
